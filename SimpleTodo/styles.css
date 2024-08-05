@@ -8,5 +8,156 @@ body {
   min-height: 100vh;
   display: flex;
   gap: 3rem;
-  background-color: #f8f4e1;
+  background-color: #fbf9f0;
+  font-family: "Noto Sans", sans-serif;
+  padding: 1rem 2rem;
+}
+
+.todoContainer {
+  width: calc(70% - 3rem);
+  border: 5px solid #543310;
+  border-radius: 20px;
+  padding: 0.8rem;
+}
+
+.inputTodo {
+  display: flex;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+}
+
+input {
+  width: 100%;
+  border: 4px solid #543310;
+  border-right: none;
+  border-radius: 8px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  height: 3.2rem;
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+.fixed-border-input:focus {
+  border: 1px solid #ccc;
+}
+
+.inputTodo button {
+  border: 4px solid #543310;
+  border-left: none;
+  border-radius: 8px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  height: 3.2rem;
+  padding: 1rem;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #533310;
+  color: #fff;
+}
+
+.todoData {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.todoData .data {
+  display: flex;
+  background: #af8f6f;
+  border-radius: 6px;
+  padding: 0.5rem 0.8rem;
+  font-size: 1.3rem;
+  color: #fbf9f0;
+  transition: all 0.3s ease-in-out;
+}
+
+.todoData .data p {
+  flex: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.todoData .data .function {
+  cursor: pointer;
+  flex: 0.13;
+  display: flex;
+  justify-content: space-between;
+}
+
+.edit {
+  transition: all 0.3s ease-in-out;
+}
+
+.edit:hover {
+  color: #543310;
+}
+
+.complete {
+  transition: all 0.3s ease-in-out;
+}
+
+.complete:hover {
+  color: #289d26;
+}
+
+.delete {
+  transition: all 0.3s ease-in-out;
+}
+
+.delete:hover {
+  color: #cb0404;
+}
+
+.finishedContainer {
+  width: 30%;
+  border: 5px solid #543310;
+  border-radius: 20px;
+  padding: 0.8rem;
+}
+
+.finishedContainer h1 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.9rem;
+}
+
+.finish-data {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.fdata {
+  display: flex;
+  display: flex;
+  background: #74512d;
+  border-radius: 6px;
+  padding: 0.5rem 0.8rem;
+  font-size: 1.3rem;
+  color: #fbf9f0;
+}
+
+.fdata p {
+  flex: 1;
+  text-decoration: line-through;
+  text-decoration-thickness: 0.2rem;
+  text-decoration-color: #fbf9f0a8;
+}
+
+.fdata .function {
+  flex: 0.18;
+  display: flex;
+  justify-content: space-between;
+}
+
+.function .restore {
+  transition: all 0.3s ease-in-out;
+}
+
+.function .restore:hover {
+  transform: rotate(-90deg);
+  color: powderblue;
 }

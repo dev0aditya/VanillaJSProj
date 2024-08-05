@@ -10,14 +10,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <script src="https://kit.fontawesome.com/86cfb7ed9d.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div class="todoContainer">
-        <div class="inputTodo"></div>
+        <div class="inputTodo">
+            <input type="text" name="" id="">
+            <button onclick="addTodo()"><i class="fa-solid fa-plus"></i></button>
+        </div>
         <div class="todoData"></div>
     </div>
-    <div class="finishedContainer"></div>
+    <div class="finishedContainer">
+        <h1>Completed</h1>
+        <div class="finish-data"></div>
+    </div>
     <script src="index.js"></script>
 </body>
 
